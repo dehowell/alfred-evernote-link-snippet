@@ -8,6 +8,19 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>137D1FED-F455-4B4F-9D39-995002076468</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C4971AFC-6B64-49CB-9E88-D622D97EDEAD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>628C7D84-2335-468D-AADB-831E361B1F95</key>
 		<array>
 			<dict>
@@ -58,6 +71,19 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>B52B24D4-8354-44C3-A7C7-15D77FB5283C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C4971AFC-6B64-49CB-9E88-D622D97EDEAD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5636A796-8400-4CFB-B744-5BFDDBFD4ED8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -249,13 +275,13 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 						<key>matchstring</key>
 						<string>com.evernote.Evernote</string>
 						<key>outputlabel</key>
-						<string>Continue</string>
+						<string>Proceed for Evernote</string>
 						<key>uid</key>
 						<string>B52B24D4-8354-44C3-A7C7-15D77FB5283C</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>Stop</string>
+				<string>Ignore for Other Apps</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -264,11 +290,73 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>index</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>137D1FED-F455-4B4F-9D39-995002076468</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>buildIndex.js</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C4971AFC-6B64-49CB-9E88-D622D97EDEAD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>'{query}', {allvars}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>5636A796-8400-4CFB-B744-5BFDDBFD4ED8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>137D1FED-F455-4B4F-9D39-995002076468</key>
+		<dict>
+			<key>note</key>
+			<string>This flow doesn't work correctly as of yet. I'd like to kick this off from a cron job or something — or maybe async from the primary workflow.</string>
+			<key>xpos</key>
+			<integer>25</integer>
+			<key>ypos</key>
+			<integer>470</integer>
+		</dict>
 		<key>1A2F169D-A63A-4721-9860-688A5DBAC2E4</key>
 		<dict>
 			<key>xpos</key>
@@ -276,12 +364,17 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 			<key>ypos</key>
 			<integer>185</integer>
 		</dict>
+		<key>5636A796-8400-4CFB-B744-5BFDDBFD4ED8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>520</integer>
+			<key>ypos</key>
+			<integer>500</integer>
+		</dict>
 		<key>628C7D84-2335-468D-AADB-831E361B1F95</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
-			<key>note</key>
-			<string>Can I make this trigger an Alfred interaction by just typing [[ like in Bear?</string>
 			<key>xpos</key>
 			<integer>20</integer>
 			<key>ypos</key>
@@ -297,7 +390,7 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 		<key>9809C525-D023-41E7-ACBA-45509A2C9496</key>
 		<dict>
 			<key>xpos</key>
-			<integer>430</integer>
+			<integer>345</integer>
 			<key>ypos</key>
 			<integer>185</integer>
 		</dict>
@@ -305,17 +398,22 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
-			<key>note</key>
-			<string>TODO How do I get this to block the snippet unless used in Evernote?</string>
+			<key>xpos</key>
+			<integer>165</integer>
+			<key>ypos</key>
+			<integer>220</integer>
+		</dict>
+		<key>C4971AFC-6B64-49CB-9E88-D622D97EDEAD</key>
+		<dict>
 			<key>xpos</key>
 			<integer>290</integer>
 			<key>ypos</key>
-			<integer>220</integer>
+			<integer>470</integer>
 		</dict>
 		<key>FE248FD0-A9A4-4F81-A4BB-8F38DD297A97</key>
 		<dict>
 			<key>xpos</key>
-			<integer>605</integer>
+			<integer>555</integer>
 			<key>ypos</key>
 			<integer>215</integer>
 		</dict>
