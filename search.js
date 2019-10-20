@@ -2,15 +2,7 @@
 
 
 function formatRichTextLink(linkText, url) {
-return `{\\rtf1\\ansi\\ansicpg1252\\cocoartf1671\\cocoasubrtf600                                       
-{\\fonttbl\\f0\\fnil\\fcharset0 HelveticaNeue;}
-{\\colortbl;\\red255\\green255\\blue255;}
-{\*\\expandedcolortbl;;}
-\\vieww12000\\viewh15840\\viewkind0
-\\deftab720
-\\pard\\pardeftab720\\partightenfactor0
-{\\field{\\*\\fldinst{HYPERLINK "${url}"}}{\\fldrslt
-\\f0\\fs28 \\cf0 ${linkText}}}}`
+return `{\\rtf1\\ansi\\ansicpg1252\\cocoartf1671\\cocoasubrtf600{\\fonttbl\\f0\\fnil\\fcharset0 HelveticaNeue;}{\\colortbl;\\red255\\green255\\blue255;}{\\*\\expandedcolortbl;;}\\vieww12000\\viewh15840\\viewkind0\\deftab720\\pard\\pardeftab720\\partightenfactor0{\\field{\\*\\fldinst{HYPERLINK "${url}"}}{\\fldrslt\\f0\\fs28\\cf0${linkText}}}}`
 }
 
 
