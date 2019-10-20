@@ -89,42 +89,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>keyword</key>
-				<string>en</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.snippet</string>
-			<key>uid</key>
-			<string>628C7D84-2335-468D-AADB-831E361B1F95</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>v</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>1048576</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>1A2F169D-A63A-4721-9860-688A5DBAC2E4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -195,6 +159,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>v</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1048576</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>1A2F169D-A63A-4721-9860-688A5DBAC2E4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -216,6 +199,40 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 			<string>720C02DC-91BA-41A4-8C5E-B34286F83C1A</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>keyword</key>
+				<string>en</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.snippet</string>
+			<key>uid</key>
+			<string>628C7D84-2335-468D-AADB-831E361B1F95</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>'{query}', {allvars}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>FE248FD0-A9A4-4F81-A4BB-8F38DD297A97</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -247,23 +264,6 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>'{query}', {allvars}</string>
-				<key>cleardebuggertext</key>
-				<false/>
-				<key>processoutputs</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.debug</string>
-			<key>uid</key>
-			<string>FE248FD0-A9A4-4F81-A4BB-8F38DD297A97</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -272,9 +272,9 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 		<key>1A2F169D-A63A-4721-9860-688A5DBAC2E4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>865</integer>
+			<integer>860</integer>
 			<key>ypos</key>
-			<integer>200</integer>
+			<integer>185</integer>
 		</dict>
 		<key>628C7D84-2335-468D-AADB-831E361B1F95</key>
 		<dict>
@@ -292,14 +292,14 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 			<key>xpos</key>
 			<integer>685</integer>
 			<key>ypos</key>
-			<integer>205</integer>
+			<integer>185</integer>
 		</dict>
 		<key>9809C525-D023-41E7-ACBA-45509A2C9496</key>
 		<dict>
 			<key>xpos</key>
-			<integer>425</integer>
+			<integer>430</integer>
 			<key>ypos</key>
-			<integer>205</integer>
+			<integer>185</integer>
 		</dict>
 		<key>B6D21E73-066B-40F4-8414-ACB52B9EB8B0</key>
 		<dict>
@@ -317,7 +317,7 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 			<key>xpos</key>
 			<integer>605</integer>
 			<key>ypos</key>
-			<integer>230</integer>
+			<integer>215</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

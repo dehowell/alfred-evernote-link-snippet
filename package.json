@@ -1,0 +1,25 @@
+{
+  "name": "alfred-evernote-link-snippet",
+  "version": "0.1.0",
+  "description": "An Alfred snippet workflow for quickly linking to notes in Evernote.",
+  "main": "search.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dehowell/alfred-evernote-link-snippet.git"
+  },
+  "author": "David Howell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dehowell/alfred-evernote-link-snippet/issues"
+  },
+  "homepage": "https://github.com/dehowell/alfred-evernote-link-snippet#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "lunr": "^2.3.7",
+    "mz": "^2.7.0"
+  }
+}
