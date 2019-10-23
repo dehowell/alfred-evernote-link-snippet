@@ -8,19 +8,6 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>137D1FED-F455-4B4F-9D39-995002076468</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C4971AFC-6B64-49CB-9E88-D622D97EDEAD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>628C7D84-2335-468D-AADB-831E361B1F95</key>
 		<array>
 			<dict>
@@ -71,19 +58,6 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>B52B24D4-8354-44C3-A7C7-15D77FB5283C</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C4971AFC-6B64-49CB-9E88-D622D97EDEAD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5636A796-8400-4CFB-B744-5BFDDBFD4ED8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -290,86 +264,17 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>index</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>137D1FED-F455-4B4F-9D39-995002076468</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>buildIndex.js</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>C4971AFC-6B64-49CB-9E88-D622D97EDEAD</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>'{query}', {allvars}</string>
-				<key>cleardebuggertext</key>
-				<false/>
-				<key>processoutputs</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.debug</string>
-			<key>uid</key>
-			<string>5636A796-8400-4CFB-B744-5BFDDBFD4ED8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>137D1FED-F455-4B4F-9D39-995002076468</key>
-		<dict>
-			<key>note</key>
-			<string>This flow doesn't work correctly as of yet. I'd like to kick this off from a cron job or something — or maybe async from the primary workflow.</string>
-			<key>xpos</key>
-			<integer>25</integer>
-			<key>ypos</key>
-			<integer>470</integer>
-		</dict>
 		<key>1A2F169D-A63A-4721-9860-688A5DBAC2E4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>860</integer>
+			<integer>800</integer>
 			<key>ypos</key>
 			<integer>185</integer>
-		</dict>
-		<key>5636A796-8400-4CFB-B744-5BFDDBFD4ED8</key>
-		<dict>
-			<key>xpos</key>
-			<integer>520</integer>
-			<key>ypos</key>
-			<integer>500</integer>
 		</dict>
 		<key>628C7D84-2335-468D-AADB-831E361B1F95</key>
 		<dict>
@@ -383,14 +288,14 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 		<key>720C02DC-91BA-41A4-8C5E-B34286F83C1A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>685</integer>
+			<integer>640</integer>
 			<key>ypos</key>
 			<integer>185</integer>
 		</dict>
 		<key>9809C525-D023-41E7-ACBA-45509A2C9496</key>
 		<dict>
 			<key>xpos</key>
-			<integer>345</integer>
+			<integer>375</integer>
 			<key>ypos</key>
 			<integer>185</integer>
 		</dict>
@@ -402,13 +307,6 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 			<integer>165</integer>
 			<key>ypos</key>
 			<integer>220</integer>
-		</dict>
-		<key>C4971AFC-6B64-49CB-9E88-D622D97EDEAD</key>
-		<dict>
-			<key>xpos</key>
-			<integer>290</integer>
-			<key>ypos</key>
-			<integer>470</integer>
 		</dict>
 		<key>FE248FD0-A9A4-4F81-A4BB-8F38DD297A97</key>
 		<dict>
