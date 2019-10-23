@@ -38,7 +38,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>FE248FD0-A9A4-4F81-A4BB-8F38DD297A97</string>
+				<string>720C02DC-91BA-41A4-8C5E-B34286F83C1A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -61,12 +61,9 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-		</array>
-		<key>FE248FD0-A9A4-4F81-A4BB-8F38DD297A97</key>
-		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>720C02DC-91BA-41A4-8C5E-B34286F83C1A</string>
+				<string>E4F459FE-A8BD-4F69-B167-852B02162346</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -106,7 +103,7 @@
 				<key>queuedelayimmediatelyinitially</key>
 				<true/>
 				<key>queuedelaymode</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
@@ -220,23 +217,6 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>'{query}', {allvars}</string>
-				<key>cleardebuggertext</key>
-				<false/>
-				<key>processoutputs</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.debug</string>
-			<key>uid</key>
-			<string>FE248FD0-A9A4-4F81-A4BB-8F38DD297A97</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -264,6 +244,23 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>\\en</string>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>E4F459FE-A8BD-4F69-B167-852B02162346</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -272,7 +269,7 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 		<key>1A2F169D-A63A-4721-9860-688A5DBAC2E4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>800</integer>
+			<integer>690</integer>
 			<key>ypos</key>
 			<integer>185</integer>
 		</dict>
@@ -288,7 +285,7 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 		<key>720C02DC-91BA-41A4-8C5E-B34286F83C1A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>640</integer>
+			<integer>530</integer>
 			<key>ypos</key>
 			<integer>185</integer>
 		</dict>
@@ -304,19 +301,19 @@ echo $linkAsRtf | pbcopy -Prefer rtf</string>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>165</integer>
+			<integer>180</integer>
 			<key>ypos</key>
 			<integer>220</integer>
 		</dict>
-		<key>FE248FD0-A9A4-4F81-A4BB-8F38DD297A97</key>
+		<key>E4F459FE-A8BD-4F69-B167-852B02162346</key>
 		<dict>
 			<key>xpos</key>
-			<integer>555</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>215</integer>
+			<integer>345</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/dehowell/alfred-evernote-link-snippet</string>
 </dict>
 </plist>
